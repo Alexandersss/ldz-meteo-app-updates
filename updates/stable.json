@@ -1,0 +1,15 @@
+{
+  "channel": "stable",
+  "notes": "Aggiornamenti senza account o token\n- Sostituito l'accesso diretto al repository privato con due feed pubblici LDZ: Stabile e Beta.\n- Il sorgente resta privato; la pipeline pubblica soltanto indici e pacchetti operativi tramite hosting statico HTTPS.\n- Il canale Stabile ignora le prerelease; Beta riceve prerelease e stabili successive. Il passaggio Beta → Stabile non esegue downgrade.\n- Rimossi dalla WebGUI token, repository, API e controlli destinati allo sviluppatore.\n- Dimensione e SHA-256 del pacchetto sono vincolati dal feed; restano verifica integrale dell'archivio, approvazione locale, backup e rollback.\n\nWebGUI compatta e diagnostica\n- Ridotte altezza e densità del riepilogo versioni senza perdere stato e azioni.\n- Nuovi switch accessibili per controllo automatico, download anticipato e Telegram; corrette le checkbox native disallineate.\n- Selezione Stabile/Beta tramite due card esplicative e pulsante Salva preferenze non più esteso per tutta la pagina.\n- “Procedura manuale di emergenza” rinominata Recupero avanzato e mantenuta chiusa per impostazione predefinita.\n- Il pulsante di controllo riporta ora la causa reale del checker; rimosso il messaggio generico “consulta lo stato updater”.\n- La pipeline distingue automaticamente release definitive e prerelease e aggiorna i due feed senza richiedere credenziali agli utilizzatori.",
+  "package": {
+    "name": "ldz-meteo-app-2.4.2-update.zip",
+    "sha256": "a2d5ff109cc512dd6653095fd693fa50d9d216440fbb40e256b0197a2baa2acd",
+    "size": 644902
+  },
+  "prerelease": false,
+  "product": "LDZ Meteo App",
+  "published_at": "2026-08-03T09:03:36Z",
+  "schema": 1,
+  "title": "LDZ Meteo App 2.4.2",
+  "version": "2.4.2"
+}
