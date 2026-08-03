@@ -1,15 +1,15 @@
 {
   "channel": "beta",
-  "notes": "Aggiornamenti senza account o token\n- Sostituito l'accesso diretto al repository privato con due feed pubblici LDZ: Stabile e Beta.\n- Il sorgente resta privato; la pipeline pubblica soltanto indici e pacchetti operativi tramite hosting statico HTTPS.\n- Il canale Stabile ignora le prerelease; Beta riceve prerelease e stabili successive. Il passaggio Beta → Stabile non esegue downgrade.\n- Rimossi dalla WebGUI token, repository, API e controlli destinati allo sviluppatore.\n- Dimensione e SHA-256 del pacchetto sono vincolati dal feed; restano verifica integrale dell'archivio, approvazione locale, backup e rollback.\n\nWebGUI compatta e diagnostica\n- Ridotte altezza e densità del riepilogo versioni senza perdere stato e azioni.\n- Nuovi switch accessibili per controllo automatico, download anticipato e Telegram; corrette le checkbox native disallineate.\n- Selezione Stabile/Beta tramite due card esplicative e pulsante Salva preferenze non più esteso per tutta la pagina.\n- “Procedura manuale di emergenza” rinominata Recupero avanzato e mantenuta chiusa per impostazione predefinita.\n- Il pulsante di controllo riporta ora la causa reale del checker; rimosso il messaggio generico “consulta lo stato updater”.\n- La pipeline distingue automaticamente release definitive e prerelease e aggiorna i due feed senza richiedere credenziali agli utilizzatori.",
+  "notes": "- Il feedback non attende più il ciclo radar: un servizio systemd dedicato usa il long polling Telegram e prende in carico il callback appena viene premuto.\n- Dopo la scelta Telegram mostra una ricevuta immediata e invia il messaggio persistente “✅ Feedback registrato: …”.\n- I pulsanti vengono rimossi dal messaggio originale dopo la prima scelta.\n- Il callback viene scritto prima in una coda locale atomica e poi consolidato nello stato degli eventi sotto lo stesso lock del motore radar.\n- La prima risposta diventa definitiva: ulteriori tocchi non possono sostituire il feedback né inserire dati duplicati nel dataset.\n- Errori di firma, chat o salvataggio sono comunicati esplicitamente; diagnostica e pagina Sistema mostrano lo stato del listener.\n- Preservati integralmente LDZ Update Network, popup, canali Stabile/Beta, backup e rollback della 2.4.2.",
   "package": {
-    "name": "ldz-meteo-app-2.4.2-update.zip",
-    "sha256": "a2d5ff109cc512dd6653095fd693fa50d9d216440fbb40e256b0197a2baa2acd",
-    "size": 644902
+    "name": "ldz-meteo-app-2.4.3-update.zip",
+    "sha256": "f5e2ef9a27b280a220d4d2cb85f65c81b75491113dbd8d0cc8b0cd4970d72c45",
+    "size": 653028
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-03T09:03:36Z",
+  "published_at": "2026-08-03T14:23:31Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.4.2",
-  "version": "2.4.2"
+  "title": "LDZ Meteo App 2.4.3",
+  "version": "2.4.3"
 }
