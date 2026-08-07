@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Ricostruita da zero la login seguendo il concept futuristico approvato, con componenti DOM/SVG reali e senza usare il mockup come sfondo.\n- Nuovo radar centrale animato con meteo.jpg reale, sweep, blip, legenda, timestamp e stato di freschezza del feed.\n- Connessione e data stream diventano indicatori dinamici; dati vecchi o assenti producono stati espliciti invece di telemetria fittizia.\n- Target e tracking celle non espongono dati interni prima dell'autenticazione e mostrano STATO PROTETTO.\n- Nuovo pannello amministratore con show/hide password e grafica HUD, preservando il contratto di autenticazione 2.4.3.\n- Responsive completo e riduzione automatica delle animazioni con prefers-reduced-motion.\n- Aggiunta suite anti-regressione specifica per login, sicurezza, copy, asset locali, telemetria sicura, responsive e motion fallback.",
+  "notes": "- Riscrittura completa della login 2.4.4 seguendo il concept approvato come specifica grafica, non come semplice ispirazione.\n- Layout desktop calibrato su tre colonne 31.4% / 37.7% / 30.9%, con hero, radar e accesso amministratore nelle proporzioni del mockup.\n- Radar centrale nuovamente rettangolare: meteo-map.jpg è la sorgente preferita, con fallback sicuro a meteo.jpg, reticolo HUD, gradi, sweep, blip e legenda sovrapposti.\n- Pannello amministratore ricostruito con cornice arancio, geometria HUD, input scuri e override esplicito dell'autofill Chromium/WebKit per eliminare i campi giallo/oliva.\n- Barra inferiore compatta a cinque moduli, waveform, data-stream equalizer, tracking visuale e stati reali/sanitizzati.\n- Background, Terra/orizzonte, stelle, glow e gerarchia cyan/arancio ricalibrati sul concept 16:9.\n- Nuovi test bloccano regressioni su geometria, radar rettangolare, autofill, telemetria sicura, responsive e reduced-motion.",
   "package": {
-    "name": "ldz-meteo-app-2.4.4-update.zip",
-    "sha256": "19b3498481b6a483959c0d351b6926681c8e26f20f87a3654578c7e93ef23ce8",
-    "size": 666845
+    "name": "ldz-meteo-app-2.4.5-update.zip",
+    "sha256": "b66bacf96897b5e4b3b43c713c0b30a9f198305fb623e14e1020461c80fb6fc3",
+    "size": 670998
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-07T15:23:00Z",
+  "published_at": "2026-08-07T17:39:50Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.4.4",
-  "version": "2.4.4"
+  "title": "LDZ Meteo App 2.4.5",
+  "version": "2.4.5"
 }
