@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Ricostruita la schermata di accesso sulla specifica grafica ufficiale: composizione desktop 16:9, proporzioni, headline, quattro card, radar, pannelli laterali, form e barra inferiore.\n- Nuovo asset orbitale locale dedicato con spazio, Terra notturna, atmosfera blu e sole all'orizzonte; il master completo non viene mai usato come background.\n- Eliminata dalla login ogni dipendenza da meteo-map.jpg e meteo.jpg: il radar è ora uno SVG scenografico autonomo con Italia, Mediterraneo, riflettività multicolore, reticolo, sweep e gradi.\n- Nessun target, cella, contatore o dato meteorologico reale viene esposto o sostituito nel pannello scenografico prima dell'autenticazione.\n- Pannello Accesso amministratore, errori, password visibility, remember-me e autofill scuro ricostruiti mantenendo CSRF, rate limiting, hash password, sessioni e cookie invariati.\n- Mobile riprogettato: branding e form completo sono nel primo viewport; hero, card e radar diventano contenuti secondari.\n- Animazioni HUD leggere con fallback prefers-reduced-motion; asset locali e nessuna dipendenza CDN.",
+  "notes": "- Rifatte le sezioni Backup, Manutenzione, Sistema, Template, Canali, Storico, Log, Eventi & feedback, Diagnostica e Kiosk con dati, stati e azioni reali.\n- Backup schedulati in Europe/Rome, retention per copie/giorni/spazio, inventario con checksum, download/eliminazione confinati, anteprima restore, snapshot pre-ripristino e rollback automatico.\n- Modalità manutenzione applicata dal server: landing e API 503 per i visitatori, login sempre disponibile e bypass amministratore visibile.\n- Updater corretto con scansione iniziale, lock single-flight, stato tentativo/successo separato, test/stato Telegram, popup installabile, snooze 1/6/24 ore, progress staleness e unità systemd transitoria univoca.\n- Preferenze updater salvate con un'azione esplicita; un cambio significativo avvia un solo controllo iniziale e non usa più schedule_activated_epoch come falso controllo.\n- SMTP con profili Gmail/Outlook/Microsoft 365/generico, TLS implicito o STARTTLS, timeout e test; webhook HTTPS spiegato, testabile, senza redirect e protetto da SSRF.\n- Template con creazione, modifica, duplicazione, eliminazione, attivazione, reset, variabili validate, anteprima live e test.\n- Storico/log/eventi bounded, filtrati e paginati lato server; export CSV e redazione di password, token, cookie e API key.\n- Diagnostica Telegram separa funzione configurata, unit installata/enabled/active, credenziali e coda; aggiunti repair controllati per listener e scheduler.\n- Login rifinita con nuova immagine radar locale dell'Italia e animazioni continue dedicate a Connessione e Data stream.\n- Versione finale 2.5.0; nessuna release, merge o deploy automatico viene eseguito dal pacchetto.",
   "package": {
-    "name": "ldz-meteo-app-2.4.7-update.zip",
-    "sha256": "d9b4ed4931282b4e47246493cb979b32055ae0d30efdd827cc43693556182509",
-    "size": 729909
+    "name": "ldz-meteo-app-2.5.0-update.zip",
+    "sha256": "71d7e6a5dca7210f3c72bb4f7597f1fbf3a49e6d5c3736a70a0424e860b79be9",
+    "size": 987758
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-09T14:44:07Z",
+  "published_at": "2026-08-09T18:16:39Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.4.7",
-  "version": "2.4.7"
+  "title": "LDZ Meteo App 2.5.0",
+  "version": "2.5.0"
 }
