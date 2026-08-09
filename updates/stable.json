@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Popup aggiornamenti interattivo disponibile in Dashboard e in ogni pagina autenticata, inclusa la pagina Aggiornamenti.\n- Ricerca manuale senza ricaricamento pagina, con comparsa immediata dell'avviso quando viene trovata una release.\n- Pannello futuristico con avanzamento reale di download, verifica, dipendenze, backup, installazione, servizi e riavvio WebGUI.\n- Installazione protetta asincrona tramite unità systemd transitoria: la procedura continua anche mentre la WebGUI viene riavviata.\n- Frequenze complete: Manuale, Oraria con minuto, Giornaliera con orario, Settimanale con giorno e orario.\n- Visualizzazione dell'ultimo e del prossimo controllo; preferenze salvate automaticamente con conferma visiva.\n- Preservate integralmente Login HUD V2 2.4.5, conferme Telegram immediate, firma, staging, rollback e feed Stabile/Beta.",
+  "notes": "- Ricostruita la schermata di accesso sulla specifica grafica ufficiale: composizione desktop 16:9, proporzioni, headline, quattro card, radar, pannelli laterali, form e barra inferiore.\n- Nuovo asset orbitale locale dedicato con spazio, Terra notturna, atmosfera blu e sole all'orizzonte; il master completo non viene mai usato come background.\n- Eliminata dalla login ogni dipendenza da meteo-map.jpg e meteo.jpg: il radar è ora uno SVG scenografico autonomo con Italia, Mediterraneo, riflettività multicolore, reticolo, sweep e gradi.\n- Nessun target, cella, contatore o dato meteorologico reale viene esposto o sostituito nel pannello scenografico prima dell'autenticazione.\n- Pannello Accesso amministratore, errori, password visibility, remember-me e autofill scuro ricostruiti mantenendo CSRF, rate limiting, hash password, sessioni e cookie invariati.\n- Mobile riprogettato: branding e form completo sono nel primo viewport; hero, card e radar diventano contenuti secondari.\n- Animazioni HUD leggere con fallback prefers-reduced-motion; asset locali e nessuna dipendenza CDN.",
   "package": {
-    "name": "ldz-meteo-app-2.4.6-update.zip",
-    "sha256": "1b2d1cf93585fbd137a7f9c3f59a105096287395bba948b3e9ddc1085d2b3511",
-    "size": 682647
+    "name": "ldz-meteo-app-2.4.7-update.zip",
+    "sha256": "d9b4ed4931282b4e47246493cb979b32055ae0d30efdd827cc43693556182509",
+    "size": 729909
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-09T13:42:59Z",
+  "published_at": "2026-08-09T14:44:07Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.4.6",
-  "version": "2.4.6"
+  "title": "LDZ Meteo App 2.4.7",
+  "version": "2.4.7"
 }
