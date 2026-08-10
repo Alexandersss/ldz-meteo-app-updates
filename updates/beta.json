@@ -1,15 +1,15 @@
 {
   "channel": "beta",
-  "notes": "- Rifatte le sezioni Backup, Manutenzione, Sistema, Template, Canali, Storico, Log, Eventi & feedback, Diagnostica e Kiosk con dati, stati e azioni reali.\n- Backup schedulati in Europe/Rome, retention per copie/giorni/spazio, inventario con checksum, download/eliminazione confinati, anteprima restore, snapshot pre-ripristino e rollback automatico.\n- Modalità manutenzione applicata dal server: landing e API 503 per i visitatori, login sempre disponibile e bypass amministratore visibile.\n- Updater corretto con scansione iniziale, lock single-flight, stato tentativo/successo separato, test/stato Telegram, popup installabile, snooze 1/6/24 ore, progress staleness e unità systemd transitoria univoca.\n- Preferenze updater salvate con un'azione esplicita; un cambio significativo avvia un solo controllo iniziale e non usa più schedule_activated_epoch come falso controllo.\n- SMTP con profili Gmail/Outlook/Microsoft 365/generico, TLS implicito o STARTTLS, timeout e test; webhook HTTPS spiegato, testabile, senza redirect e protetto da SSRF.\n- Template con creazione, modifica, duplicazione, eliminazione, attivazione, reset, variabili validate, anteprima live e test.\n- Storico/log/eventi bounded, filtrati e paginati lato server; export CSV e redazione di password, token, cookie e API key.\n- Diagnostica Telegram separa funzione configurata, unit installata/enabled/active, credenziali e coda; aggiunti repair controllati per listener e scheduler.\n- Login rifinita con nuova immagine radar locale dell'Italia e animazioni continue dedicate a Connessione e Data stream.\n- Versione finale 2.5.0; nessuna release, merge o deploy automatico viene eseguito dal pacchetto.",
+  "notes": "- Completati filtri per data e tipo evento, paginazione e aggiornamento live di Storico, Log ed Eventi & feedback.\n- Backup e restore mostrano avanzamento reale, creano una copia pre-ripristino verificata e registrano esito e rollback.\n- Eliminazione backup con conferma esplicita; azioni Sistema, dry-run e test restituiscono stato asincrono comprensibile.\n- Anteprime Template realmente distinte per Telegram, e-mail e webhook; test canali con esito persistente e sanitizzato.\n- Diagnostica feedback arricchita con stato listener, coda, API Telegram e ultimo callback ricevuto.\n- Kiosk collegato ai dati operativi di target, rischio, traiettoria, ETA, qualità e avvisi, con fullscreen e fallback reduced-motion.\n- Rimossa l'identità modello legata alla vecchia release 2.4.0; aggiunti test funzionali di restore/rollback e scheduler CET/CEST.\n- Validazione locale completa: 148 test superati; i controlli su provider e systemd reali vengono completati sull'installazione autorizzata dall'amministratore.",
   "package": {
-    "name": "ldz-meteo-app-2.5.0-update.zip",
-    "sha256": "71d7e6a5dca7210f3c72bb4f7597f1fbf3a49e6d5c3736a70a0424e860b79be9",
-    "size": 987758
+    "name": "ldz-meteo-app-2.5.1-update.zip",
+    "sha256": "b1657c5585775599e165e4eaa72892a185c42388a8b43343a67cc79b67d8740c",
+    "size": 1005377
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-09T18:16:39Z",
+  "published_at": "2026-08-10T07:53:17Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.5.0",
-  "version": "2.5.0"
+  "title": "LDZ Meteo App 2.5.1",
+  "version": "2.5.1"
 }
