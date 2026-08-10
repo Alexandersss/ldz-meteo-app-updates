@@ -1,15 +1,15 @@
 {
   "channel": "beta",
-  "notes": "- Popup di installazione più ampio e con comandi allineati, incluso il promemoria “Più tardi”.\n- Il messaggio “Aggiornamento completato” viene visualizzato una sola volta per l'installazione verificata e non ricompare ai login successivi.\n- “Riprova” e “Dettagli tecnici” sono disponibili esclusivamente quando l'installazione segnala un errore; nel completamento restano solo chiusura e ricarica dell'app.",
+  "notes": "- Template notifiche riorganizzati in una vera area di lavoro: editor, variabili e anteprima hanno larghezza utile e testo leggibile.\n- Rimossa la casella vuota dalla pianificazione backup: l'opzione secrets.env è ora una riga dedicata, senza deformare la griglia.\n- Kiosk: uscita fullscreen sempre raggiungibile, supporto Esc, nessuna sovrapposizione e nessun auto-nascondimento dei controlli.\n- Il radar kiosk mantiene a video l'ultima immagine valida finché la nuova non è pronta: un errore di refresh non produce più una schermata nera.\n- Aumentata la dimensione di titoli, descrizioni, etichette, campi e testi operativi nelle pagine di gestione.",
   "package": {
-    "name": "ldz-meteo-app-2.5.2-update.zip",
-    "sha256": "2c2af6354849f92f86124ee861be7c1c12bd3072654cc77200c6757183b35a89",
-    "size": 1006201
+    "name": "ldz-meteo-app-2.5.3-update.zip",
+    "sha256": "0ffd3d7bfe9a66a5df67360fe2ee9ca9bd4dbce078e7df334df98cafbde21557",
+    "size": 1007343
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-10T08:18:35Z",
+  "published_at": "2026-08-10T11:20:25Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.5.2",
-  "version": "2.5.2"
+  "title": "LDZ Meteo App 2.5.3",
+  "version": "2.5.3"
 }
