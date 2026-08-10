@@ -1,15 +1,15 @@
 {
   "channel": "beta",
-  "notes": "- Template notifiche riorganizzati in una vera area di lavoro: editor, variabili e anteprima hanno larghezza utile e testo leggibile.\n- Rimossa la casella vuota dalla pianificazione backup: l'opzione secrets.env è ora una riga dedicata, senza deformare la griglia.\n- Kiosk: uscita fullscreen sempre raggiungibile, supporto Esc, nessuna sovrapposizione e nessun auto-nascondimento dei controlli.\n- Il radar kiosk mantiene a video l'ultima immagine valida finché la nuova non è pronta: un errore di refresh non produce più una schermata nera.\n- Aumentata la dimensione di titoli, descrizioni, etichette, campi e testi operativi nelle pagine di gestione.",
+  "notes": "- Aggiunta confidenza operativa continua e per prodotto per disponibilità, età e skew, distinta dalla qualità fisica non osservabile del pixel.\n- Aggiunto proxy di copertura per target da SITES, senza attribuire al mosaico correzioni inventate per beam blocking, clutter, bright band o attenuazione.\n- Split/merge e svolte recenti degradano la stabilità del moto, ampliano la covarianza e rendono prudente la finestra ETA; le celle stazionarie sul target restano valutabili.\n- Un frame aggiuntivo è richiesto per nuovi alert con dati molto degradati o topologia instabile, salvo impatto del core o precipitazione già osservata vicino al target.\n- Hail Fusion separa indice di evidenza, confidenza dati, potenziale severo e probabilità calibrata; senza calibrazione non mostra una falsa percentuale combinata.\n- Lightning Jump usa flash-rate normalizzato, baseline di tre finestre confrontabili, copertura minima e blocco dopo split/merge.\n- Telegram, dashboard e kiosk distinguono probabilità calibrata da indice 0–100 e stabilità da confidenza dati.\n- Aggiunte regressioni sintetiche riproducibili per prodotti mancanti/vecchi/corrotti, split, merge, svolte, celle stazionarie, pioggia intensa senza grandine e finestre LTG incomplete.",
   "package": {
-    "name": "ldz-meteo-app-2.5.3-update.zip",
-    "sha256": "0ffd3d7bfe9a66a5df67360fe2ee9ca9bd4dbce078e7df334df98cafbde21557",
-    "size": 1007343
+    "name": "ldz-meteo-app-2.6.0-beta.1-update.zip",
+    "sha256": "4799806369e22ea33f84d17d3f84dc240f121c75e1bab6cbce7a4d76760dcbed",
+    "size": 964922
   },
-  "prerelease": false,
+  "prerelease": true,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-10T11:20:25Z",
+  "published_at": "2026-08-10T19:25:35Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.5.3",
-  "version": "2.5.3"
+  "title": "LDZ Meteo App 2.6.0-beta.1",
+  "version": "2.6.0-beta.1"
 }
