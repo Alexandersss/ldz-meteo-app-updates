@@ -1,14 +1,14 @@
 {
   "channel": "stable",
-  "notes": "- Separati realmente i canali: Stabile pubblica e accetta soltanto release definitive; Beta pubblica e accetta soltanto prerelease.\n- Corretto il workflow che, durante una release stabile, sovrascriveva erroneamente anche beta.json e beta-v2.json con lo stesso pacchetto stabile.\n- Il generatore e il client ora rifiutano esplicitamente una release stabile etichettata come Beta, impedendo che l'errore possa ripresentarsi anche con modifiche future alla pipeline.\n- Aggiornata la WebGUI: il canale Beta è descritto come insieme esclusivo di anteprime e non più come “Beta + stabili”; nessun canale esegue downgrade automatici.",
+  "notes": "- Semplificato il popup aggiornamenti: restano soltanto “Installa ora” e “Dettagli”; rimossi rinvio, selettore temporale, conferma e chiusura laterale.\n- “Installa ora” avvia con un solo consenso download, verifica crittografica e installazione, mantenendo obbligatori tutti i controlli di sicurezza.\n- Separati realmente i canali: Stabile pubblica e accetta soltanto release definitive; Beta pubblica e accetta soltanto prerelease.\n- Corretto il workflow che, durante una release stabile, sovrascriveva erroneamente anche beta.json e beta-v2.json con lo stesso pacchetto stabile.\n- Il generatore e il client ora rifiutano esplicitamente una release stabile etichettata come Beta, impedendo che l'errore possa ripresentarsi anche con modifiche future alla pipeline.\n- Aggiornata la WebGUI: il canale Beta è descritto come insieme esclusivo di anteprime e non più come “Beta + stabili”; nessun canale esegue downgrade automatici.",
   "package": {
     "name": "ldz-meteo-app-2.6.0d-update.zip",
-    "sha256": "c4c1c61cfe7812681137bc1e364c50dd1f2136a2b1e6f5f2d9aa18622cef4c50",
-    "size": 987340
+    "sha256": "ee129522219eb421fd47aff694049d58d974c9067149a478f5fb580643dbfa15",
+    "size": 987197
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T13:58:44Z",
+  "published_at": "2026-08-11T14:20:08Z",
   "schema": 1,
   "title": "LDZ Meteo App 2.6.0d",
   "version": "2.6.0d"
