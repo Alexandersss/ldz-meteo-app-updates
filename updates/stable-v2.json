@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Riorganizzati gli avvisi Telegram: fenomeno, arrivo, possibilità, grandine e azione consigliata sono leggibili a colpo d'occhio.\n- “Dettagli radar” diventa “Cosa vede il radar”: pioggia, distanza, movimento ed evoluzione sono spiegati in parole comuni; dBZ e mm/h restano in una nota secondaria.\n- Semplificati gli aggiornamenti “Rischio aumentato” e “Traiettoria meno probabile”, eliminando sigle, profilo verticale e formule diagnostiche dal testo operativo.\n- Riscritti “Fenomeno transitato”, gli altri messaggi di chiusura e la verifica finale “Com'è andata?” senza indici geometrici o ripetizioni tecniche.\n- Restano visibili automaticamente fulmini, grandine significativa e problemi di qualità dati quando sono davvero rilevanti.",
+  "notes": "- Archivio previsionale compatto per target e scadenza, verifica automatica su dati radar reali e metriche Brier/accuratezza per metodo.\n- pySTEPS/LINDA in ombra su frame SRI regolari; indisponibilità e dati insufficienti non producono previsioni finte né influenzano gli avvisi.\n- Connettore MeteoHub per risultati compatibili WRF_DA_ITA e ICON-2I-RUC, con credenziali dedicate escluse dai backup, token volatile e limiti di rete/disco.\n- Nuova pagina Weather Lab responsive, con percorso in quattro passaggi, stato delle fonti, confronto spiegato, onboarding account e impostazioni avanzate progressive.\n- Installer e hotfix migrano configurazione, dipendenza pySTEPS, modulo Weather Lab, segreti e unità systemd senza sovrascrivere credenziali esistenti.",
   "package": {
-    "name": "ldz-meteo-app-2.6.0f-update.zip",
-    "sha256": "bca6a5dd6f6614c76cb214e230c8d59a6ab279ba0f52088e1a4715f31b2deaf9",
-    "size": 992831
+    "name": "ldz-meteo-app-2.6.0h-update.zip",
+    "sha256": "b134a93f8ddef45f219ca9980f20331f6cf66b846fe4b8318c3506b0f2f14e52",
+    "size": 1012974
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T18:04:29Z",
+  "published_at": "2026-08-11T20:26:59Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.6.0f",
-  "version": "2.6.0f"
+  "title": "LDZ Meteo App 2.6.0h",
+  "version": "2.6.0h"
 }
