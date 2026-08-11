@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Corretto il popup che poteva restare al 24% dopo una seconda ricerca sulla stessa versione: lo stato conclusivo è ora deduplicato per job_id, non per numero di release.\n- Aggiunta una regressione eseguibile che verifica due controlli consecutivi della stessa versione e impone chiavi terminali distinte.\n- Introdotto un limite assoluto per i processi asincroni: 90 secondi per il check e 15 minuti per il download, con terminazione controllata e causa visibile.\n- Conservati interamente grafica, riconnessione post-riavvio e motore scientifico della 2.6.0b.",
+  "notes": "- Separati realmente i canali: Stabile pubblica e accetta soltanto release definitive; Beta pubblica e accetta soltanto prerelease.\n- Corretto il workflow che, durante una release stabile, sovrascriveva erroneamente anche beta.json e beta-v2.json con lo stesso pacchetto stabile.\n- Il generatore e il client ora rifiutano esplicitamente una release stabile etichettata come Beta, impedendo che l'errore possa ripresentarsi anche con modifiche future alla pipeline.\n- Aggiornata la WebGUI: il canale Beta è descritto come insieme esclusivo di anteprime e non più come “Beta + stabili”; nessun canale esegue downgrade automatici.",
   "package": {
-    "name": "ldz-meteo-app-2.6.0c-update.zip",
-    "sha256": "9e1f3ed2a0e022e8f69cb99a43793d77e968046d5b20300e0820274cf34854fc",
-    "size": 986540
+    "name": "ldz-meteo-app-2.6.0d-update.zip",
+    "sha256": "c4c1c61cfe7812681137bc1e364c50dd1f2136a2b1e6f5f2d9aa18622cef4c50",
+    "size": 987340
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T13:39:27Z",
+  "published_at": "2026-08-11T13:58:44Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.6.0c",
-  "version": "2.6.0c"
+  "title": "LDZ Meteo App 2.6.0d",
+  "version": "2.6.0d"
 }
