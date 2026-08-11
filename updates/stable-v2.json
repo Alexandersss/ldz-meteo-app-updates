@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Resi asincroni controllo manuale, scansione iniziale e download: la WebGUI continua a servire la telemetria e non resta più ferma al 4% mentre il checker lavora.\n- Introdotti identificatori stabili per ogni job e isolamento dell'operazione attiva, impedendo a un terminale precedente di produrre il falso lampo rosso durante una nuova installazione.\n- La perdita temporanea della WebGUI durante il riavvio è ora uno stato esplicito di riconnessione con retry adattivo, timeout per singola richiesta e nessun falso errore di installazione.\n- Il completamento viene scritto dal nuovo processo WebGUI soltanto quando la versione realmente in esecuzione coincide con quella attesa; il 94–96% non dipende più dalla vecchia scheda del browser.\n- Alleggerito il polling: lo stato live non esegue più systemctl a ogni richiesta e i controlli dello scheduler sono serviti da cache temporale.\n- Ridisegnati pagina e popup come console futuristica leggibile, con telemetria, tempo trascorso, fasi nominate, stato del collegamento, progressione reale e layout mobile dedicato.\n- Il riavvio pianificato della WebGUI non ignora più un errore di systemd-run: usa un fallback diretto verificabile oppure restituisce una causa reale.",
+  "notes": "- Corretto il popup che poteva restare al 24% dopo una seconda ricerca sulla stessa versione: lo stato conclusivo è ora deduplicato per job_id, non per numero di release.\n- Aggiunta una regressione eseguibile che verifica due controlli consecutivi della stessa versione e impone chiavi terminali distinte.\n- Introdotto un limite assoluto per i processi asincroni: 90 secondi per il check e 15 minuti per il download, con terminazione controllata e causa visibile.\n- Conservati interamente grafica, riconnessione post-riavvio e motore scientifico della 2.6.0b.",
   "package": {
-    "name": "ldz-meteo-app-2.6.0b-update.zip",
-    "sha256": "c8fdfc7825b5d8c3c243a9c71019e75aa983de0ce5d67f598564e5993acafbb6",
-    "size": 985411
+    "name": "ldz-meteo-app-2.6.0c-update.zip",
+    "sha256": "9e1f3ed2a0e022e8f69cb99a43793d77e968046d5b20300e0820274cf34854fc",
+    "size": 986540
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T11:03:51Z",
+  "published_at": "2026-08-11T13:39:27Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.6.0b",
-  "version": "2.6.0b"
+  "title": "LDZ Meteo App 2.6.0c",
+  "version": "2.6.0c"
 }
