@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Corretto Adaptive Forecast AI sui dati diagnostici reali: il modello ora apprende una correzione residua ancorata alla probabilità stabile, invece di tentare di sostituirla con un classificatore autonomo vicino al 50%.\n- I candidati batch vengono caricati soltanto se superano davvero la baseline nel holdout cronologico e rispettano miglioramento Brier e falsi negativi; un candidato peggiore viene respinto senza alterare il nowcast.\n- Esclusi dal training i 25 eventi di warm-up privi di baseline e separati i track tra training e validazione per ridurre la dipendenza tra campioni dello stesso temporale.\n- “Temporali distinti” conta ora il solo track_id: lo stesso temporale osservato su più target non gonfia più il requisito di indipendenza.\n- Rimossa la soglia grafica artificiale del 90%: la dashboard distingue copertura dati, qualità non idonea e influenza operativa, spiegando chiaramente perché il modello resta in ombra.",
+  "notes": "- Riorganizzati gli avvisi Telegram: fenomeno, arrivo, possibilità, grandine e azione consigliata sono leggibili a colpo d'occhio.\n- “Dettagli radar” diventa “Cosa vede il radar”: pioggia, distanza, movimento ed evoluzione sono spiegati in parole comuni; dBZ e mm/h restano in una nota secondaria.\n- Semplificati gli aggiornamenti “Rischio aumentato” e “Traiettoria meno probabile”, eliminando sigle, profilo verticale e formule diagnostiche dal testo operativo.\n- Riscritti “Fenomeno transitato”, gli altri messaggi di chiusura e la verifica finale “Com'è andata?” senza indici geometrici o ripetizioni tecniche.\n- Restano visibili automaticamente fulmini, grandine significativa e problemi di qualità dati quando sono davvero rilevanti.",
   "package": {
-    "name": "ldz-meteo-app-2.6.0e-update.zip",
-    "sha256": "6826579ceddc1f38585165a598bdec397ddb8061a87a91940936ead4c4877532",
-    "size": 991666
+    "name": "ldz-meteo-app-2.6.0f-update.zip",
+    "sha256": "bca6a5dd6f6614c76cb214e230c8d59a6ab279ba0f52088e1a4715f31b2deaf9",
+    "size": 992831
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T15:57:53Z",
+  "published_at": "2026-08-11T18:04:29Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.6.0e",
-  "version": "2.6.0e"
+  "title": "LDZ Meteo App 2.6.0f",
+  "version": "2.6.0f"
 }
