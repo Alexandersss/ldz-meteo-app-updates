@@ -1,15 +1,15 @@
 {
   "channel": "stable",
-  "notes": "- Corretto Adaptive Forecast AI sui dati diagnostici reali: il modello ora apprende una correzione residua ancorata alla probabilità stabile, invece di tentare di sostituirla con un classificatore autonomo vicino al 50%.\n- I candidati batch vengono caricati soltanto se superano davvero la baseline nel holdout cronologico e rispettano miglioramento Brier e falsi negativi; un candidato peggiore viene respinto senza alterare il nowcast.\n- Esclusi dal training i 25 eventi di warm-up privi di baseline e separati i track tra training e validazione per ridurre la dipendenza tra campioni dello stesso temporale.\n- “Temporali distinti” conta ora il solo track_id: lo stesso temporale osservato su più target non gonfia più il requisito di indipendenza.\n- Rimossa la soglia grafica artificiale del 90%: la dashboard distingue copertura dati, qualità non idonea e influenza operativa, spiegando chiaramente perché il modello resta in ombra.\n- Semplificato il popup aggiornamenti: restano soltanto “Installa ora” e “Dettagli”; rimossi rinvio, selettore temporale, conferma e chiusura laterale.\n- “Installa ora” avvia con un solo consenso download, verifica crittografica e installazione, mantenendo obbligatori tutti i controlli di sicurezza.\n- Separati realmente i canali: Stabile pubblica e accetta soltanto release definitive; Beta pubblica e accetta soltanto prerelease.\n- Corretto il workflow che, durante una release stabile, sovrascriveva erroneamente anche beta.json e beta-v2.json con lo stesso pacchetto stabile.\n- Il generatore e il client ora rifiutano esplicitamente una release stabile etichettata come Beta, impedendo che l'errore possa ripresentarsi anche con modifiche future alla pipeline.\n- Aggiornata la WebGUI: il canale Beta è descritto come insieme esclusivo di anteprime e non più come “Beta + stabili”; nessun canale esegue downgrade automatici.",
+  "notes": "- Corretto Adaptive Forecast AI sui dati diagnostici reali: il modello ora apprende una correzione residua ancorata alla probabilità stabile, invece di tentare di sostituirla con un classificatore autonomo vicino al 50%.\n- I candidati batch vengono caricati soltanto se superano davvero la baseline nel holdout cronologico e rispettano miglioramento Brier e falsi negativi; un candidato peggiore viene respinto senza alterare il nowcast.\n- Esclusi dal training i 25 eventi di warm-up privi di baseline e separati i track tra training e validazione per ridurre la dipendenza tra campioni dello stesso temporale.\n- “Temporali distinti” conta ora il solo track_id: lo stesso temporale osservato su più target non gonfia più il requisito di indipendenza.\n- Rimossa la soglia grafica artificiale del 90%: la dashboard distingue copertura dati, qualità non idonea e influenza operativa, spiegando chiaramente perché il modello resta in ombra.",
   "package": {
-    "name": "ldz-meteo-app-2.6.0d-update.zip",
-    "sha256": "d1c8764b577904f48129935ccd588f6445146fd2553427257668eddc91f2fe04",
-    "size": 990919
+    "name": "ldz-meteo-app-2.6.0e-update.zip",
+    "sha256": "6826579ceddc1f38585165a598bdec397ddb8061a87a91940936ead4c4877532",
+    "size": 991666
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-11T15:46:37Z",
+  "published_at": "2026-08-11T15:57:53Z",
   "schema": 1,
-  "title": "LDZ Meteo App 2.6.0d",
-  "version": "2.6.0d"
+  "title": "LDZ Meteo App 2.6.0e",
+  "version": "2.6.0e"
 }
