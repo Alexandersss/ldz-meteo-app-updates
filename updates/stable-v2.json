@@ -1,16 +1,16 @@
 {
-  "build_id": "20260830.131414+a64903cb399c",
+  "build_id": "20260830.133119+0793c2b247d7",
   "channel": "stable",
-  "commit": "a64903cb399cbbb848aa03fe85c3b102efb62a12",
-  "notes": "- Rimossi 43 simboli e duplicazioni dimostrati irraggiungibili, con gate automatici contro la loro reintroduzione.\n- Ritirato il vecchio collegamento MeteoHub autenticato; il percorso open-data in uso resta invariato.\n- Rimosse dipendenze parser non più usate (xarray e cfgrib), mantenendo eccodes per i GRIB operativi.\n- Aggiunta la migrazione conservativa delle regole require_hail_risk e min_risk_level; configurazioni, eventi, feedback e apprendimento vengono preservati.\n- Nessun cambiamento a soglie scientifiche, calcolo di probabilità, target, Telegram o gate fulmini.\n- Candidato verificato sulla VM per oltre 12 ore e 269 cicli radar, con WebGUI, servizi, timer, backup e persistenza operativi.",
+  "commit": "0793c2b247d70f2dd6595f962daa2790657c57a8",
+  "notes": "- Nuova build grafica del login: marchio radar LDZ coerente con la WebGUI, pannello di accesso più leggibile e finiture HUD desktop/mobile.\n- La scena pre-login è ora esplicitamente sintetica: rimossi coordinate, uptime, percentuali e falsi stati operativi; nessuna fonte o telemetria reale viene esposta.\n- Rimossi 43 simboli e duplicazioni dimostrati irraggiungibili, con gate automatici contro la loro reintroduzione.\n- Ritirato il vecchio collegamento MeteoHub autenticato; il percorso open-data in uso resta invariato.\n- Rimosse dipendenze parser non più usate (xarray e cfgrib), mantenendo eccodes per i GRIB operativi.\n- Aggiunta la migrazione conservativa delle regole require_hail_risk e min_risk_level; configurazioni, eventi, feedback e apprendimento vengono preservati.\n- Nessun cambiamento a soglie scientifiche, calcolo di probabilità, target, Telegram o gate fulmini.\n- Candidato verificato sulla VM per oltre 12 ore e 269 cicli radar, con WebGUI, servizi, timer, backup e persistenza operativi.",
   "package": {
     "name": "ldz-meteo-app-2.6.1a-update.zip",
-    "sha256": "ce7bf206c69ae2da35995b37568563940bb179c9901810f09cea66744a3940d3",
-    "size": 1071522
+    "sha256": "be7dfbd14f18485812ec5d49836948b711fe164604bc99e175e007136ab553c1",
+    "size": 1072139
   },
   "prerelease": false,
   "product": "LDZ Meteo App",
-  "published_at": "2026-08-30T13:14:20Z",
+  "published_at": "2026-08-30T13:31:24Z",
   "schema": 1,
   "title": "LDZ Meteo App 2.6.1a",
   "version": "2.6.1a"
